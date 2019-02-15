@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vK6-GH-2f1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipe Any Direction-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swipe_gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nx5-ht-39o">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nx5-ht-39o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0T6-e8-iSZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nx5-ht-39o" secondAttribute="bottom" id="76i-8Y-wN0"/>
+                            <constraint firstItem="nx5-ht-39o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TWV-Bn-lJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nx5-ht-39o" secondAttribute="trailing" id="W6n-JD-ByK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swipe Any Direction" id="37v-wY-3D7"/>
+                    <connections>
+                        <outlet property="img1" destination="nx5-ht-39o" id="QBg-Gf-hHK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="-581"/>
+        </scene>
+        <!--Next-->
+        <scene sceneID="Wbg-ch-Zrt">
+            <objects>
+                <viewController storyboardIdentifier="next" id="kGt-TB-Kk4" customClass="next" customModule="swipe_gesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zRS-Xl-gBo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elephant.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="saN-ip-2Us">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f8v-e2-qie" firstAttribute="trailing" secondItem="saN-ip-2Us" secondAttribute="trailing" id="7oz-Xa-2wc"/>
+                            <constraint firstItem="saN-ip-2Us" firstAttribute="top" secondItem="f8v-e2-qie" secondAttribute="top" id="KUT-G0-OYx"/>
+                            <constraint firstItem="saN-ip-2Us" firstAttribute="leading" secondItem="f8v-e2-qie" secondAttribute="leading" id="Mql-j2-anQ"/>
+                            <constraint firstItem="f8v-e2-qie" firstAttribute="bottom" secondItem="saN-ip-2Us" secondAttribute="bottom" id="mSC-rf-TuJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f8v-e2-qie"/>
+                    </view>
+                    <connections>
+                        <outlet property="img2" destination="saN-ip-2Us" id="hWP-WG-kiA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPp-EN-rZN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911.2" y="-580.65967016491754"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ysa-TT-QmV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vK6-GH-2f1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="az4-hr-utu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="knA-ns-pft"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JNf-c8-vhS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="-580.65967016491754"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="elephant.jpg" width="225" height="225"/>
+    </resources>
+</document>
